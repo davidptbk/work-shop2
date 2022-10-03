@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcute icon" href="images/logo.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>page</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div>
-                <figure><img src="" alt="Logo"></figure>
+    <header class="header">
+        <div class="header__nav">
+            <div class="header__nav__logo">
+                <img src="images/logo.svg" alt="Logo" class="header__nav__logo__img">
             </div>
-            <div>
-                <ul>prueba</ul>
+            <div class="header__nav__contenido">
+                <div class="header__nav__contenido__izquierda">
+                        <div>Features <img src="images/icon-arrow-down.svg" alt="flecha abajo"></div>
+                        <div>Company <img src="images/icon-arrow-down.svg" alt="flecha abajo"></div>
+                        <div>Careers</div>
+                        <div>About</div>
+                </div>
+                <div class="header__nav__contenido__derecha">
+                    <p>Login</p>
+                    <button class="header__nav__contenido__derecha__button">Register</button>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <main>
+    <main class="main">
+        <section class="main__izquierda">
+            <h1 class="main__izquierda__make">Make <br> remote work</h1>
 
+            <p class="main__izquierda__get">Get your team in sync, no matter your location.<br> Streamline processes, create team rituals, and <br>watch
+                productivity soar.</p>
+
+            <button class="main__izquierda__button">Learn more</button>
+            <div class="main__izquierda__footer">
+                <img src="images/client-databiz.svg" alt="databiz" class="main__izquierda__footer__iconos">
+                <img src="images/client-audiophile.svg" alt="audio" class="main__izquierda__footer__iconos">
+                <img src="images/client-meet.svg" alt="meet" class="main__izquierda__footer__iconos">
+                <img src="images/client-maker.svg" alt="maker" class="main__izquierda__footer__iconos">
+            </div>
+        </section>
+        <section class="main__derecha">
+            <figure>
+                <img src="images/image-hero-desktop.png" alt="img main" class="main__derecha__img">
+            </figure>
+        </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>

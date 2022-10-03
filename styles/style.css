@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Exo+2:wght@200;400&family=Lato:wght@300&family=Roboto:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.header {
+  display: flex;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav__logo {
+  display: flex;
+  height: 28px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.header__nav__contenido {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 100px;
+}
+.header__nav__contenido__izquierda {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 41%);
+}
+.header__nav__contenido__derecha {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  margin-right: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 41%);
+}
+.header__nav__contenido__derecha__button {
+  display: flex;
+  height: 28px;
+  width: 80px;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-left: 22px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 41%);
+  border-radius: 15px;
+  border-color: hsl(0deg, 0%, 48%);
+}
+
+.main {
+  display: flex;
+}
+.main__izquierda {
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.main__izquierda__make {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+}
+.main__izquierda__get {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 17x;
+  color: hsl(0deg, 0%, 41%);
+  margin-top: 40px;
+}
+.main__izquierda__button {
+  display: flex;
+  height: 28px;
+  width: 100px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  border-radius: 12px;
+}
+.main__izquierda__footer {
+  margin-top: 70px;
+  display: flex;
+  gap: 20px;
+}
+.main__izquierda__footer__iconos {
+  display: flex;
+  height: 18px;
+}
+.main__derecha {
+  display: flex;
+  height: 650px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.main__derecha__img {
+  display: flex;
+  height: 600px;
+}/*# sourceMappingURL=style.css.map */
