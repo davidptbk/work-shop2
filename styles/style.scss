@@ -36,6 +36,15 @@
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 color: hsl(0, 0%, 41%);
+            
+                &__company:hover{
+                   cursor: pointer;
+                   color: black;
+                }
+                &__features:hover{
+                    cursor: pointer;
+                    color: black;
+                }
             }
 
             &__derecha {
@@ -46,6 +55,7 @@
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 color: hsl(0, 0%, 41%);
+
 
                 &__button {
                     display: flex;
@@ -59,6 +69,10 @@
                     color: hsl(0, 0%, 41%);
                     border-radius: 15px;
                     border-color: hsl(0, 0%, 48%);
+                    cursor: pointer;
+                }
+                &__button:hover{
+                    color: black;
                 }
             }
 
@@ -105,17 +119,23 @@
             color: white;
             background-color: black;
             border-radius: 12px;
+            cursor: pointer;
         }
-        &__footer{
+        &__button:hover{
+            color: gray;
+        }
+
+        &__footer {
             margin-top: 70px;
             display: flex;
             gap: 20px;
-            &__iconos{
+
+            &__iconos {
                 display: flex;
                 height: 18px;
             }
         }
-        
+
     }
 
     &__derecha {
@@ -129,4 +149,77 @@
             height: 600px;
         }
     }
+}
+
+
+#contenedorFlotante{
+    background-color: whitesmoke;
+    margin-top: 30px;
+    width: 170px;
+    height: 120px;
+    z-index: 100;
+    border-radius: 20px;
+    gap: 3px;
+    position: absolute;
+}
+.letra{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 250px;
+}
+.hidden {
+    display: none;
+}
+.cardFL{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+}
+.imageFLO{
+   display: flex;
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 10px;
+    z-index: 100;   
+}
+
+#contenedorFlotante1{
+    background-color: whitesmoke;
+    margin-top: 10px;
+    width: 100px;
+    height: 90px;
+    z-index: 100;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.letra1{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 250px;
+}
+.hidden1 {
+    display: none;
+}
+.cardFL1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.imageFLO2{
+   display: flex;
+    width: 250px;
+    margin-left: 15px;
+    z-index: 100;   
+}
+.imageFLO1:hover{
+    cursor: pointer;
+}
+.desabilitados:hover{
+    color: black;
+    cursor: pointer;
 }
