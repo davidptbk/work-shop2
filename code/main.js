@@ -67,15 +67,15 @@ companyC[0].addEventListener('mouseout',mostra1);
 
 // //--------------------------------------//
 
-class x{
+class creator{
     constructor(id){
     this.target =document.getElementById(id)
 }
 }
-const {target:menuH} =new x('menuhamburguesa')
-const {target:menuI} =new x('menuinterno')
+const {target:menuH} =new x('menuhamburguesa');
+const {target:menuI} =new x('menuinterno');
 
-const ocularYmostrar =()=>{
+const ocultarMostrar =()=>{
 
     if(menuI.classList.contains('hidden3')){
         menuI.classList.remove('hidden3')
@@ -84,4 +84,4 @@ const ocularYmostrar =()=>{
         menuI.classList.add('hidden3')
     }
 }
-menuH.addEventListener('click',ocularYmostrar)
+menuH.addEventListener('click',ocultarMostrar)
