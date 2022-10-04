@@ -24,13 +24,13 @@
 
         &__contenido {
             display: flex;
-            justify-content: space-between;
             width: 1200px;
             height: 100px;
+            justify-content:space-around;
 
             &__izquierda {
                 display: flex;
-                gap: 40px;
+                gap: 30px;
                 margin-top: 30px;
                 margin-left: 50px;
                 font-family: 'Roboto', sans-serif;
@@ -38,8 +38,8 @@
                 color: hsl(0, 0%, 41%);
             
                 &__company:hover{
-                   cursor: pointer;
-                   color: black;
+                    cursor: pointer;
+                    color: black;
                 }
                 &__features:hover{
                     cursor: pointer;
@@ -49,12 +49,13 @@
 
             &__derecha {
                 display: flex;
+                height: 100%;
                 gap: 40px;
                 margin-top: 30px;
-                margin-right: 0px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 color: hsl(0, 0%, 41%);
+
 
 
                 &__button {
@@ -122,7 +123,8 @@
             cursor: pointer;
         }
         &__button:hover{
-            color: gray;
+            color: black;
+            background-color: white;
         }
 
         &__footer {
@@ -147,6 +149,9 @@
         &__img {
             display: flex;
             height: 600px;
+        }
+        &__mobile{
+            display: none;
         }
     }
 }
@@ -178,7 +183,7 @@
 
 }
 .imageFLO{
-   display: flex;
+    display: flex;
     width: 250px;
     margin-left: 15px;
     margin-top: 10px;
@@ -211,7 +216,7 @@
     width: 250px;
 }
 .imageFLO2{
-   display: flex;
+    display: flex;
     width: 250px;
     margin-left: 15px;
     z-index: 100;   
@@ -222,4 +227,82 @@
 .desabilitados:hover{
     color: black;
     cursor: pointer;
+}
+.container_hamb{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px){
+    .header {
+        &__nav {    
+            &__contenido {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 60px;
+                display: none;
+    
+                &__derecha {
+                    display: flex;
+                    gap: 40px;
+                    margin-top: 30px;
+                    margin-right: 0px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                    color: hsl(0, 0%, 41%);
+
+                    &__hamburguer{
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+                }
+    
+            }
+        }
+        .container_hamb{
+            display: block;
+        }
+        .hidden3{
+            display: none;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        &__izquierda{
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 0;
+            width: 100%;
+            align-items: center;
+            &__footer {
+                margin-top: 40px;
+                justify-content: space-around;
+                &__iconos {
+                    display: flex;
+                    height: 18px;
+                }
+            }
+    
+        }
+        &__derecha {
+            margin-left: 0px;
+
+            &__img {
+                display: none;
+            }
+            &__mobile{
+                display: block;
+            }
+        }
+        br{
+            display: none;
+        }
+    }
 }

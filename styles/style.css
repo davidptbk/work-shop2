@@ -19,13 +19,13 @@
 }
 .header__nav__contenido {
   display: flex;
-  justify-content: space-between;
   width: 1200px;
   height: 100px;
+  justify-content: space-around;
 }
 .header__nav__contenido__izquierda {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   margin-top: 30px;
   margin-left: 50px;
   font-family: "Roboto", sans-serif;
@@ -42,9 +42,9 @@
 }
 .header__nav__contenido__derecha {
   display: flex;
+  height: 100%;
   gap: 40px;
   margin-top: 30px;
-  margin-right: 0px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: hsl(0deg, 0%, 41%);
@@ -104,7 +104,8 @@
   cursor: pointer;
 }
 .main__izquierda__button:hover {
-  color: gray;
+  color: black;
+  background-color: white;
 }
 .main__izquierda__footer {
   margin-top: 70px;
@@ -124,6 +125,9 @@
 .main__derecha__img {
   display: flex;
   height: 600px;
+}
+.main__derecha__mobile {
+  display: none;
 }
 
 #contenedorFlotante {
@@ -204,4 +208,74 @@
 .desabilitados:hover {
   color: black;
   cursor: pointer;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.container_hamb {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__nav__contenido {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 60px;
+    display: none;
+  }
+  .header__nav__contenido__derecha {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-right: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: hsl(0deg, 0%, 41%);
+  }
+  .header__nav__contenido__derecha__hamburguer {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .header .container_hamb {
+    display: block;
+  }
+  .header .hidden3 {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .main__izquierda {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .main__izquierda__footer {
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  .main__izquierda__footer__iconos {
+    display: flex;
+    height: 18px;
+  }
+  .main__derecha {
+    margin-left: 0px;
+  }
+  .main__derecha__img {
+    display: none;
+  }
+  .main__derecha__mobile {
+    display: block;
+  }
+  .main br {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

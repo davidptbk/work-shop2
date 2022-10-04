@@ -64,3 +64,24 @@ let mostra1 = () =>{
 
 companyC[0].addEventListener('mouseover',mostra);
 companyC[0].addEventListener('mouseout',mostra1);
+
+// //--------------------------------------//
+
+class x{
+    constructor(id){
+    this.target =document.getElementById(id)
+}
+}
+const {target:menuH} =new x('menuhamburguesa')
+const {target:menuI} =new x('menuinterno')
+
+const ocularYmostrar =()=>{
+
+    if(menuI.classList.contains('hidden3')){
+        menuI.classList.remove('hidden3')
+    }
+    else{
+        menuI.classList.add('hidden3')
+    }
+}
+menuH.addEventListener('click',ocularYmostrar)
